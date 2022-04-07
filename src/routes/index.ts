@@ -8,12 +8,12 @@ export interface IRoute {
   exact?: boolean;
 }
 export enum RouteNames {
-    LOGIN = '/login',
-    EVENT = '/'
+  LOGIN = "/login",
+  EVENT = "/",
 }
 export const publicRoutes: IRoute[] = [
-    {path:RouteNames.LOGIN,exact:true,component:Login}
-]
+  { path: RouteNames.LOGIN, exact: true, component: Login },
+];
 export const privateRoutes: IRoute[] = [
-    {path:RouteNames.EVENT,exact:true,component:Event}
-]
+  { path: RouteNames.EVENT, exact: true, component: Event },
+];
